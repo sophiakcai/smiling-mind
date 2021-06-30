@@ -13,7 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBDesignable class RotatableView: UIView {
 
+        @objc @IBInspectable var rotationDegrees: Float = 0 {
+            didSet {
+                print("Setting angle to \(rotationDegrees)")
+                let angle = NSNumber(value: rotationDegrees / 180.0 * Float.pi)
+                layer.setValue(angle, forKeyPath: "transform.rotation.z")
+            }
+        }
+    }
 
 }
 
