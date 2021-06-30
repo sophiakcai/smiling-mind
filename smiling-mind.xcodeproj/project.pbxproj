@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10F3D50268CE64F007DA25F /* InspirationalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F3D4F268CE64F007DA25F /* InspirationalViewController.swift */; };
+		A10F3D52268CE99A007DA25F /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10F3D51268CE99A007DA25F /* MoodViewController.swift */; };
 		A88D21B3268BACFF007CD787 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D21B2268BACFF007CD787 /* AppDelegate.swift */; };
 		A88D21B5268BACFF007CD787 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D21B4268BACFF007CD787 /* SceneDelegate.swift */; };
 		A88D21B7268BACFF007CD787 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D21B6268BACFF007CD787 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A10F3D4F268CE64F007DA25F /* InspirationalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationalViewController.swift; sourceTree = "<group>"; };
+		A10F3D51268CE99A007DA25F /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
 		A88D21AF268BACFF007CD787 /* smiling-mind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "smiling-mind.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D21B2268BACFF007CD787 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A88D21B4268BACFF007CD787 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				A88D21C0268BAD00007CD787 /* LaunchScreen.storyboard */,
 				A88D21C3268BAD00007CD787 /* Info.plist */,
 				A88D21BB268BACFF007CD787 /* smiling_mind.xcdatamodeld */,
+				A10F3D4F268CE64F007DA25F /* InspirationalViewController.swift */,
+				A10F3D51268CE99A007DA25F /* MoodViewController.swift */,
 			);
 			path = "smiling-mind";
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			files = (
 				A88D21B7268BACFF007CD787 /* ViewController.swift in Sources */,
 				A88D21B3268BACFF007CD787 /* AppDelegate.swift in Sources */,
+				A10F3D50268CE64F007DA25F /* InspirationalViewController.swift in Sources */,
 				A88D21B5268BACFF007CD787 /* SceneDelegate.swift in Sources */,
 				A88D21BD268BACFF007CD787 /* smiling_mind.xcdatamodeld in Sources */,
+				A10F3D52268CE99A007DA25F /* MoodViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
