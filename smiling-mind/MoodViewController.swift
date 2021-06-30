@@ -11,17 +11,16 @@ class MoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        monday.text = moods[0]
 
         // Do any additional setup after loading the view.
     }
     
+    var moods: [String] = ["happy", "sad", "angry", "neutral", "happy", "sad", "angry"]
     
-//    func displayEmojis () {
-//        if reaction.count > 7 {
-//            var lastSeven = [reaction[reaction.count-1], reaction[reaction.count-2],reaction[reaction.count-3],reaction[reaction.count-4], reaction[reaction.count-5], reaction[reaction.count-6], reaction[reaction.count-7]]
-//
-//        }
-//    }
+    @IBOutlet weak var monday: UILabel!
+    
+    @IBOutlet weak var tuesday: UILabel!
     
     /*
     // MARK: - Navigation
