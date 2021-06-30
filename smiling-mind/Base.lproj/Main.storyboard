@@ -82,11 +82,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRf-Ht-Pu5">
-                                <rect key="frame" x="209" y="104" width="120" height="30"/>
+                                <rect key="frame" x="246" y="104" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="temporary button"/>
+                                <state key="normal" title="submit"/>
                                 <connections>
-                                    <segue destination="K0R-4h-YVi" kind="show" id="PSb-rx-r4c"/>
+                                    <segue destination="K0R-4h-YVi" kind="show" identifier="showMoods" id="PSb-rx-r4c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -298,8 +298,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="jJP-c7-QyN"/>
                     <connections>
+                        <outlet property="friday" destination="F4r-et-mgq" id="JKa-0b-hiC"/>
                         <outlet property="monday" destination="kEq-5L-47P" id="eV9-uk-ZxB"/>
+                        <outlet property="saturday" destination="e4Q-vT-JFZ" id="VIZ-Bv-cxi"/>
+                        <outlet property="sunday" destination="p0b-0K-SE3" id="6rz-uZ-mUG"/>
+                        <outlet property="thursday" destination="NdF-w3-7xy" id="PCA-Le-S4f"/>
                         <outlet property="tuesday" destination="goe-JN-qym" id="1do-gh-c5a"/>
+                        <outlet property="wednesday" destination="BNy-hW-uN5" id="tUx-m4-1uF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJY-AB-B4k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

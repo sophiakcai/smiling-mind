@@ -9,35 +9,44 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var currentMood: String = ""
+    
+    var moodVC = MoodViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    public var reaction = [String]()
-    
+        
     @IBAction func happy(_ sender: UIButton) {
-        reaction.append("happy")
+        currentMood = "happy"
     }
     
     @IBAction func mild(_ sender: UIButton) {
-        reaction.append("mild")
+        currentMood = ("mild")
     }
     
     @IBAction func neutral(_ sender: UIButton) {
-        reaction.append("neutral")
+        currentMood = ("neutral")
     }
     
     @IBAction func sad(_ sender: UIButton) {
-        reaction.append("sad")
+        currentMood = ("sad")
     }
     
     @IBAction func devastated(_ sender: UIButton) {
-        reaction.append("devastated")
+        currentMood = ("devastated")
     }
     
     @IBAction func angry(_ sender: UIButton) {
-        reaction.append("angry")
+        currentMood = ("angry")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMoods" {
+            let controller = segue.destination as! MoodViewController
+            controller.currentMood = currentMood 
+        }
     }
     
     
