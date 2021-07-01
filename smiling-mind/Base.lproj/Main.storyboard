@@ -398,9 +398,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-lN-qYF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMw-lN-qYF">
                                 <rect key="frame" x="128" y="74" width="158" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -417,9 +416,52 @@
                                     <segue destination="OGQ-lm-WQO" kind="show" id="Aw7-GV-Yki"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyf-97-Hke">
+                                <rect key="frame" x="117" y="143" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkk-9E-ctJ">
+                                <rect key="frame" x="65" y="185" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" link="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fR-T3-M6Y">
+                                <rect key="frame" x="35" y="468" width="345" height="157"/>
+                                <string key="text">Hotline numbers
+Suicide hotline number: 1-800-273-8255
+National Eating Disorder Association: 1-800-931-2237
+National Alliance on Mental Illness: 1-800-950-6264
+SAMHSA National Helpline: 1-800-662-4357
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KnR-K2-Gsm">
+                                <rect key="frame" x="15" y="160" width="399" height="235"/>
+                                <mutableString key="text">-https://www.helpguide.org/articles/depression/coping-with-depression.htm                                                                            -https://www.samhsa.gov/find-help/national-helpline                   -https://www.healthline.com/health/how-to-calm-down                                 -https://zenhabits.net/10-simple-sure-fire-ways-to-make-today-your-best-day-ever/                                                                                 -https://www.byrdie.com/having-a-bad-day-5112749         -https://tinybuddha.com/blog/7-ways-to-get-past-tough-situations-quickly/                                                                                           -https://www.wisebread.com/47-cheap-fun-things-to-do-this-weekend                                                                                                   -https://www.jackcanfield.com/blog/how-to-create-an-empowering-vision-book/</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Sb-Zj-6Zx"/>
                         <color key="backgroundColor" red="0.91764705882352937" green="0.89803921568627454" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KnR-K2-Gsm" secondAttribute="trailing" constant="30" id="cpL-zK-ifQ"/>
+                            <constraint firstItem="KnR-K2-Gsm" firstAttribute="leading" secondItem="KoS-wp-XOR" secondAttribute="leading" constant="30" id="fXf-jS-iSm"/>
+                            <constraint firstAttribute="trailing" secondItem="KnR-K2-Gsm" secondAttribute="trailing" constant="-15" id="mgD-wk-OTe"/>
+                            <constraint firstItem="9fR-T3-M6Y" firstAttribute="top" secondItem="KnR-K2-Gsm" secondAttribute="bottom" constant="100" id="xzq-iX-RUW"/>
+                            <constraint firstItem="KnR-K2-Gsm" firstAttribute="top" secondItem="XMw-lN-qYF" secondAttribute="bottom" constant="100" id="yaV-Vr-aNt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7Ru-Pj-1G0"/>
                 </viewController>
@@ -476,7 +518,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xVf-aC-KYf"/>
+        <segue reference="jP3-EZ-X83"/>
         <segue reference="PSb-rx-r4c"/>
     </inferredMetricsTieBreakers>
     <resources>
